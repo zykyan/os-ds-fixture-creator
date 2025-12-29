@@ -1,27 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-geist-sans: 'Inter', sans-serif;
+  --color-bg-start: #ebe7f3;
+  --color-bg-end: #ffffff;
+  --color-text-primary: #3a1f66;
+  --color-text-secondary: #747474;
+  --color-accent-pink: #ff6fd8;
+  --color-accent-pink-dark: #ff52a0;
+  --color-danger: #ef4444;
 }
 
 * {
@@ -30,13 +17,14 @@ body {
   margin: 0;
 }
 
+body {
+  font-family: var(--font-geist-sans);
+  background: linear-gradient(to bottom, var(--color-bg-start), var(--color-bg-end));
+  color: var(--color-text-primary);
+  min-height: 100vh;
+}
+
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
